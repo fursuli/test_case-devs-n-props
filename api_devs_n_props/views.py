@@ -28,3 +28,4 @@ class NewProperty(generics.ListCreateAPIView):
     queryset = Property.objects.all()
     serializer_class = PropertySerializer
     permission_classes = (AllowAny, )
+

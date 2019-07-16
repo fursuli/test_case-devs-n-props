@@ -15,13 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework_jwt.views import ObtainJSONWebToken
 from rest_framework_swagger.views import get_swagger_view
+from rest_framework_jwt.views import ObtainJSONWebToken
 
-schema_view = get_swagger_view(title='Devices & Properties API')
+
+# schema_view = get_swagger_view(title='Devices & Properties API')
 
 urlpatterns = [
-    path('', schema_view),
+    # path('', schema_view),
     path('admin/', admin.site.urls),
     path('', include('api_devs_n_props.urls')),
     path(
