@@ -15,4 +15,4 @@ class Property(models.Model):
 
     p_name = models.CharField(max_length=68, null=False, blank=False)
     content = models.TextField(max_length=200, null=True, blank=True)
-    type = models.CharField(choices=types, max_length=9, null=False, blank=False)
+    type = models.CharField(choices=types, max_length=9, default='plaintext')
